@@ -6,7 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: npm install -g bats
       - run: |
            mkdir ~/.npm-global
            npm config set prefix '~/.npm-global'
